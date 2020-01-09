@@ -51,7 +51,17 @@
             android:textColor="#F44336"
             android:text="@string/tap_to_open_mic"
             android:textSize="22sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="#000"
+            android:text="@string/tagname"
+            android:textSize="14sp" />
     </LinearLayout>
 
 </RelativeLayout>

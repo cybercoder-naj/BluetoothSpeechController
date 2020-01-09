@@ -2,4 +2,5 @@
     <string name="app_name">Bluetooth Speech Controller</string>
     <string name="tap_to_open_mic">Tap to open mic.</string>
     <string name="microphone_image">Microphone image.</string>
+    <string name="tagname">Made by Nishant Aanjaney Jalan.\nInstagram: cybercoder.naj</string>
 </resources>
