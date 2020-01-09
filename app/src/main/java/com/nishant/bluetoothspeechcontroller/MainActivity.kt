@@ -15,9 +15,13 @@ private const val REQUEST_CODE = 100
 private const val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var bt: BluetoothConnection
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        bt = BluetoothConnection(this, txt_bt_display)
 
         btn_mic.setOnClickListener {
             getVoiceInput()
@@ -43,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         if (requestCode == REQUEST_CODE && resultCode == Activity.RESULT_OK && data != null) {
             val result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
             voice_input.text = result?.get(0) ?: "Error"
+            bt.sendData(result!![0])
         }
     }
 }

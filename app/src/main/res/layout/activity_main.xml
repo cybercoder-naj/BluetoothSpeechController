@@ -25,6 +25,16 @@
         android:orientation="vertical"
         tools:ignore="UseCompoundDrawables">
 
+        <TextView
+            android:id="@+id/txt_bt_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#F44336"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
         <ImageView
             android:id="@+id/btn_mic"
             android:layout_width="120dp"
